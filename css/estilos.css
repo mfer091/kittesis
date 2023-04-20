@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+body{
+    overflow-x: hidden;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #084e6e;
+}
+h1 {    
+    width: 100%;
+    color: white;
+    padding: 1rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+main {
+    min-height: calc(100vh - (78px + 110px));
+}
+.accordion-button.collapsed{
+    color: #084e6ed0;
+    font-weight: bold;
+    font-size: 1.2rem;
+    z-index: 0;
+}
+.accordion-button:not(.collapsed) {
+    color:rgb(255, 145, 0);
+    background-color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    z-index: 0;
+}
+.enlaces {
+    text-decoration: none;
+    display: block;
+    line-height: 30px;
+    color: #084E6E;
+}
+.enlaces:hover{
+    color:rgb(255, 145, 0);
+}
+.footer {
+    position: sticky;
+    bottom: 0px;
+    background-color: #084e6e; 
+    width: 100%;
+
+}
+.linkRedes{
+    width: 50%;
+    text-align: center;
+}
+.logoBiblioteca{
+    width:100%;
+    object-fit: cover;
+
+}
+.firma{
+    font-size: 0.8rem;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+@media only screen and (min-width: 426px) {
+    .logoBiblioteca{
+        width: 25%;
+    }
+    .firma{
+        font-size: 0.8rem;
+    }
+}

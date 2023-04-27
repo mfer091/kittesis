@@ -5,7 +5,10 @@
     cursor: pointer;
 }
 body{
-    overflow-x: hidden;
+    overflow-x: hidden!important;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 header{
     position: sticky;
@@ -20,8 +23,8 @@ h1 {
     font-size: 2.5rem;
     text-align: center;
 }
-main {
-    min-height: calc(100vh - (78px + 110px));
+main{
+    flex: 1;
 }
 .accordion-button.collapsed{
     color: #084e6ed0;
@@ -46,11 +49,10 @@ main {
     color:rgb(255, 145, 0);
 }
 .footer {
-    position: sticky;
-    bottom: 0px;
+    height: 112px;
     background-color: #084e6e; 
     width: 100%;
-
+    margin-top: auto;
 }
 .linkRedes{
     width: 50%;
@@ -59,7 +61,6 @@ main {
 .logoBiblioteca{
     width:100%;
     object-fit: cover;
-
 }
 .firma{
     font-size: 0.8rem;
@@ -67,11 +68,21 @@ main {
     color: white;
     font-weight: bold;
 }
-@media only screen and (min-width: 426px) {
+.firmaDetalles{
+    margin-bottom: 0!important;
+}
+@media screen and (min-width: 429px) {
     .logoBiblioteca{
         width: 25%;
     }
-    .firma{
-        font-size: 0.8rem;
+}
+@media screen and (min-width: 768px) {
+    .logoBiblioteca{
+        width: 45%;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .logoBiblioteca{
+        width: 28%;
     }
 }
